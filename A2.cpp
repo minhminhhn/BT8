@@ -22,6 +22,9 @@ int main( )
 
     }
     //=> double: 8 byte
+   double c[7] = {1,2,3,4,5,6,0};
+   for (double *cp = &c[0]; (*cp) != 0; cp+=2) {
+      cout << (void*) cp << " : " << (*cp) << endl;
     return 0;
 
 }
